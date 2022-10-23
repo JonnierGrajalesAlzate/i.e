@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*Eliminar los estilos que la pagina tiene por defecto*/
+  }
+
+  body {
+    margin: 0; /*Sin margenes*/
+    padding: 0;/*Sin rellenos*/
+    background: linear-gradient(150deg, rgb(80, 196, 80), white, rgb(241, 241, 64) );
+   background-size: 400% 300%;
+    background-repeat: no-repeat;/*Para que no se repita el fondo*/
+   animation: Reciplanet 5s ease infinite;/*animacion para el fondo*/
+    display: flex;
+    justify-content: center;/*contenido centrado*/
+    align-items: center;
+    min-height: 100vh;
+    font-size: 120%;
+  }
+
+  @keyframes Reciplanet {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}/*animacion de movimiento del fondo de la pagína*/
+  }
+
+  .menu-horizontal{
+    border-radius: 20px; /*para darle al botón unas curvas a sus costados*/
+    height: 60px;/*alto del botón*/
+    width: 80%;/*ancho del botón*/
+    list-style: none;/*eliminarle el punto de ennumeración de la letra*/
+ 
+}
+.menu-horizontal > li a{
+    padding: 15px 20px;/*relleno del fondo en donde esta la letra*/
+    font-size: 20px;/*tamaño de la letra*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;/*quitarle el subrayado por defecto del botón*/
+    float: left;/*botón ubicado hacia la izquierda*/
+}
+
+#ayuda{
+  background-color: green;
+  color: white;
+  border: 2px solid black;/*para que el contorno del fondo se vea de color oscuro*/
+  cursor: pointer;/*el cursor pondrá la manito al estar sobre el botón de ayuda*/
+}
+
+#ayuda:hover{
+  background-color: rgb(27, 177, 27);
+  color: black;
+}
+
+#selector{
+  border: 2px solid black;/*para que el contorno del fondo se vea de color oscuro*/
+  background: black;/*fondo del botón*/
+  color: white;/*color de la letra*/
+   font-family: 'Lobster', cursive;/*estilo de la letra*/
+   border-radius: 20px;/*para darle corvatura a los costados*/
+}
+
+#selector:hover{
+  border: 2px solid black;
+  background: rgba(19, 18, 18, 0.74);
+  color: white;
+    border-radius: 20px;
+
+}
+  #encabezado {
+    width: 80vw;/*ancho del encabezado en donde contiene los items*/
+    min-height: 180px;/*altura minima*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*dirección tipo columna*/
+    background: rgb(199, 199, 199);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .opcion {
+    width: 80vw;/*ancho de las opciones de respuestas*/
+    background: rgb(199, 199, 199);
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .opcion:hover{
+    background: rgba(223, 142, 76, 0.849);
+
+       font-weight: 30px;
+      transition: all 0.3s ease;/*al tocar con el cursor la opción esta se desprenderá de forma no tan agresiva*/
+  }
